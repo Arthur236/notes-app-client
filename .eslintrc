@@ -5,6 +5,14 @@
     "es6": true,
     "browser": true
   },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -18,6 +26,6 @@
     "react/prefer-stateless-function": 0,
     "react/jsx-props-no-spreading": 0,
     "import/no-named-as-default": 0,
-    "import/no-named-as-default-member": 0,
+    "import/no-named-as-default-member": 0
   }
 }
