@@ -7,7 +7,7 @@ import config from '../../config';
 import { s3Upload } from '../../libs/awsLib';
 import './note.css';
 
-export default class Note extends Component {
+export default class NewNote extends Component {
   constructor(props) {
     super(props);
 
