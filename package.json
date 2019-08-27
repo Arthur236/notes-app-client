@@ -17,7 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.js src/**/*.jsx"
+    "lint": "eslint src/**/*.js src/**/*.jsx",
+    "predeploy": "npm run build",
+    "deploy": "aws s3 sync build/ s3://notes-s3-client --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id E31CM904C24CAT --paths '/*'"
   },
   "eslintConfig": {
     "extends": "react-app"
